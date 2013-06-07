@@ -9,13 +9,9 @@
 </head>
 <body>
 Hello CloudMunch <br>
-Deployment to GAE <br>
-This is a simple Java Server Page to add 2 numbers <br>
+This is a Java Server Page
+The addition of two numbers <%=request.getParameter("parm1") %> and <%=request.getParameter("parm2") %> is <br>
+<% 
+double result= Calc.add(Double.parseDouble(request.getParameter("parm1")), Double.parseDouble(request.getParameter("parm2"))); %>
+<%= result %>
 
-<form action="calc.jsp" method=get>
-  Enter the first number <input type=text name=parm1> <br>
-  Enter the second number <input type=text name=parm2> <br>
-  <input type=submit value="Submit">
-  </form>
-</body>
-</html>
