@@ -8,7 +8,7 @@
 <title>The great Calculator</title>
 </head>
 <body>
-Hello <br>
+Hello Cloudmunch<br>
 This is a Java Server Page
 The addition of two numbers <%=request.getParameter("parm1") %> and <%=request.getParameter("parm2") %> is <br>
 <% 
